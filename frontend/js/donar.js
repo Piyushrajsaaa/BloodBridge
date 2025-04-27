@@ -119,12 +119,12 @@ class DonorService {
         // Handle checkboxes
         if (form.querySelector('[name="availableToContact"]')) {
             form.querySelector('[name="availableToContact"]').checked = 
-                !!this.donorProfile.availableToContact;
+                Boolean(this.donorProfile.availableToContact);
         }
         
         if (form.querySelector('[name="hasTransportation"]')) {
             form.querySelector('[name="hasTransportation"]').checked = 
-                !!this.donorProfile.hasTransportation;
+                Boolean(this.donorProfile.hasTransportation);
         }
     }
     
